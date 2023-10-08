@@ -8,13 +8,7 @@ export default function App(){
     const cards = data.map(card => {
         return (
             <Card
-            key={card.id}
-            place={card.place}
-            country={card.country}
-            googleMapsUrl={card.googleMapsUrl}
-            dateOfVisit={card.dateOfVisit}
-            description={card.description}
-            imageUrl={card.imageUrl}
+            {...card}
             />
         )
     })

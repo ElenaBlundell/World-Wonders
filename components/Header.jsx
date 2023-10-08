@@ -2,7 +2,7 @@ import React from "react"
 
 export default function Header(){
     return <header>
-            <img src="images/globe-icon.png" />
-            <h2>my travel journal.</h2>
+            <h2>Wonders of the World</h2>
+            <img src="/images/globe-icon.png" />
           </header>
 }

@@ -1,23 +1,23 @@
 import React from "react"
 
-export default function Card({place, country, googleMapsUrl, dateOfVisit, description, imageUrl}){
+export default function Card(props){
     return (
         <div>
         <div className="card">
             <div className="place-img">
-                <img  src={imageUrl} />
+                <img  src={props.imageUrl} />
             </div>
             <div className="card-info">
                 <div className="location">
-                    <img src="./public/images/location-pin.png" />
-                    <h4>{country}</h4>
+                    <img src="./images/location-pin.png" />
+                    <h4>{props.country}</h4>
                     <div className="google-map-link">
-                        <a href={googleMapsUrl}>View on Google Maps</a>
+                        <a href={props.googleMapsUrl}>View on Google Maps</a>
                     </div>
                 </div>
-                <h1>{place}</h1>
-                <h3>{dateOfVisit}</h3>
-                <p>{description}</p>
+                <h1>{props.place}</h1>
+                <h3>{props.dateOfCreation}</h3>
+                <p>{props.description}</p>
             </div>
         </div>
         <hr />
