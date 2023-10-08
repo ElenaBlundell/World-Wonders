@@ -5,7 +5,7 @@
   
 }
 
-#root {
+body {
   margin: 0 auto;
   color: #2B283A;
 }
@@ -36,9 +36,9 @@ header h2 {
 }
 
 header img {
-  margin: 1em;
+  margin: 0 1em;
   width: 1.8em;
-  height: 1.8em;
+  height: auto;
 }
 
 
@@ -47,6 +47,7 @@ header img {
 .cards-list {
   width: 80vw;
   max-width: 800px;
+  min-width: 350px;
 }
 
 hr {
@@ -115,6 +116,10 @@ h1, h3 {
   margin: 0 auto 2em;
 }
 
+.card-info p {
+  line-height: 1.5rem;
+}
+
 .cards-list div:last-child hr {
   display: none;
 }
@@ -156,7 +161,7 @@ h1, h3 {
   }
 
   h1 {
-    margin-bottom: 1rem ;
+    margin-bottom: 1em ;
   }
     
 }
